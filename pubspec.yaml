@@ -1,0 +1,7 @@
+name: datetime_utc_converter
+description: A simple way to convert a DateTime object between UTC and device's local timezones
+version: 1.0.0
+homepage: https://github.com/Moonspeaker/datetime_utc_converter
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
