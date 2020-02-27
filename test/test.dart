@@ -2,7 +2,10 @@ import 'package:datetime_utc_converter/datetime_utc_converter.dart';
 
 void main() {
   final DateTime now = DateTime.now();
-  print("now: ${now.millisecondsSinceEpoch}");
-  print("at utc: ${dateTimeConvertedToUTC(now).millisecondsSinceEpoch}");
-  print("to utc and back: ${dateTimeConvertedToLocal(dateTimeConvertedToUTC(now)).millisecondsSinceEpoch}");
+  print('timeZoneOffset: ${DateTime.now().timeZoneOffset}');
+  print("now: ${now.hour}");
+  print("at utc: ${dateTimeConvertedToUTC(now).hour}");
+  print("to utc and back: ${dateTimeConvertedToLocal(dateTimeConvertedToUTC(now)).hour}");
+
+  print('test: ${now.subtract(now.timeZoneOffset).hour}');
 }
